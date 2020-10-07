@@ -1,0 +1,1326 @@
+{
+    "swagger": "2.0",
+    "basePath": "/cip_pop_var/1.0",
+    "paths": {
+        "/area/100_102/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarAreaListModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u6578\u64da\uff0c\u5728\u5404\u7e23\u5e02\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (100\u5e74~102\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u67e5\u8a62\u7684\u7e23\u5e02\u6709: \u65b0\u5317\u5e02, \u81fa\u5317\u5e02, \u53f0\u5317\u5e02, \u6843\u5712\u5e02, \u6843\u5712\u7e23, \u81fa\u4e2d\u5e02, \u53f0\u4e2d\u5e02, \u81fa\u5357\u5e02, \u53f0\u5357\u5e02, \u9ad8\u96c4\u5e02, \u5b9c\u862d\u7e23, \u65b0\u7af9\u7e23, \u82d7\u6817\u7e23, \u5f70\u5316\u7e23, \u5357\u6295\u7e23, \u96f2\u6797\u7e23, \u5609\u7fa9\u7e23, \u5c4f\u6771\u7e23, \u81fa\u6771\u7e23, \u53f0\u6771\u7e23, \u82b1\u84ee\u7e23, \u6f8e\u6e56\u7e23, \u57fa\u9686\u5e02, \u65b0\u7af9\u5e02, \u5609\u7fa9\u5e02, \u91d1\u9580\u7e23, \u9023\u6c5f\u7e23",
+                "operationId": "get_area_list_100_102",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "area"
+                ]
+            }
+        },
+        "/area/100_102/{area}": {
+            "parameters": [
+                {
+                    "description": "\u7e23\u5e02\u540d\u7a31",
+                    "name": "area",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "post": {
+                "responses": {
+                    "404": {
+                        "description": "\u627e\u4e0d\u5230\u8a72\u7e23\u5e02\u7684\u8cc7\u6599"
+                    },
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarAreaModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u67d0\u4e00\u500b\u7e23\u5e02(\u5982\u65b0\u5317\u5e02)\u5167\uff0c\u5404\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (100\u5e74~102\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u63d0\u4f9b\u67e5\u8a62\u7684\u5340\u57df(\u7e23\u5e02)\u6709: \u65b0\u5317\u5e02, \u81fa\u5317\u5e02, \u53f0\u5317\u5e02, \u6843\u5712\u5e02, \u6843\u5712\u7e23, \u81fa\u4e2d\u5e02, \u53f0\u4e2d\u5e02, \u81fa\u5357\u5e02, \u53f0\u5357\u5e02, \u9ad8\u96c4\u5e02, \u5b9c\u862d\u7e23, \u65b0\u7af9\u7e23, \u82d7\u6817\u7e23, \u5f70\u5316\u7e23, \u5357\u6295\u7e23, \u96f2\u6797\u7e23, \u5609\u7fa9\u7e23, \u5c4f\u6771\u7e23, \u81fa\u6771\u7e23, \u53f0\u6771\u7e23, \u82b1\u84ee\u7e23, \u6f8e\u6e56\u7e23, \u57fa\u9686\u5e02, \u65b0\u7af9\u5e02, \u5609\u7fa9\u5e02, \u91d1\u9580\u7e23, \u9023\u6c5f\u7e23",
+                "operationId": "post_area_100_102",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "area"
+                ]
+            }
+        },
+        "/area/100_103/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarAreaListModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u6578\u64da\uff0c\u5728\u5404\u7e23\u5e02\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (100\u5e74~103\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u67e5\u8a62\u7684\u7e23\u5e02\u6709: \u65b0\u5317\u5e02, \u81fa\u5317\u5e02, \u53f0\u5317\u5e02, \u6843\u5712\u5e02, \u6843\u5712\u7e23, \u81fa\u4e2d\u5e02, \u53f0\u4e2d\u5e02, \u81fa\u5357\u5e02, \u53f0\u5357\u5e02, \u9ad8\u96c4\u5e02, \u5b9c\u862d\u7e23, \u65b0\u7af9\u7e23, \u82d7\u6817\u7e23, \u5f70\u5316\u7e23, \u5357\u6295\u7e23, \u96f2\u6797\u7e23, \u5609\u7fa9\u7e23, \u5c4f\u6771\u7e23, \u81fa\u6771\u7e23, \u53f0\u6771\u7e23, \u82b1\u84ee\u7e23, \u6f8e\u6e56\u7e23, \u57fa\u9686\u5e02, \u65b0\u7af9\u5e02, \u5609\u7fa9\u5e02, \u91d1\u9580\u7e23, \u9023\u6c5f\u7e23",
+                "operationId": "get_area_list_100_103",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "area"
+                ]
+            }
+        },
+        "/area/100_103/{area}": {
+            "parameters": [
+                {
+                    "description": "\u7e23\u5e02\u540d\u7a31",
+                    "name": "area",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "post": {
+                "responses": {
+                    "404": {
+                        "description": "\u627e\u4e0d\u5230\u8a72\u7e23\u5e02\u7684\u8cc7\u6599"
+                    },
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarAreaModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u67d0\u4e00\u500b\u7e23\u5e02(\u5982\u65b0\u5317\u5e02)\u5167\uff0c\u5404\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (100\u5e74~103\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u63d0\u4f9b\u67e5\u8a62\u7684\u5340\u57df(\u7e23\u5e02)\u6709: \u65b0\u5317\u5e02, \u81fa\u5317\u5e02, \u53f0\u5317\u5e02, \u6843\u5712\u5e02, \u6843\u5712\u7e23, \u81fa\u4e2d\u5e02, \u53f0\u4e2d\u5e02, \u81fa\u5357\u5e02, \u53f0\u5357\u5e02, \u9ad8\u96c4\u5e02, \u5b9c\u862d\u7e23, \u65b0\u7af9\u7e23, \u82d7\u6817\u7e23, \u5f70\u5316\u7e23, \u5357\u6295\u7e23, \u96f2\u6797\u7e23, \u5609\u7fa9\u7e23, \u5c4f\u6771\u7e23, \u81fa\u6771\u7e23, \u53f0\u6771\u7e23, \u82b1\u84ee\u7e23, \u6f8e\u6e56\u7e23, \u57fa\u9686\u5e02, \u65b0\u7af9\u5e02, \u5609\u7fa9\u5e02, \u91d1\u9580\u7e23, \u9023\u6c5f\u7e23",
+                "operationId": "post_area_100_103",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "area"
+                ]
+            }
+        },
+        "/area/100_107/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarAreaListModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u6578\u64da\uff0c\u5728\u5404\u7e23\u5e02\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (100\u5e74~107\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u67e5\u8a62\u7684\u7e23\u5e02\u6709: \u65b0\u5317\u5e02, \u81fa\u5317\u5e02, \u53f0\u5317\u5e02, \u6843\u5712\u5e02, \u6843\u5712\u7e23, \u81fa\u4e2d\u5e02, \u53f0\u4e2d\u5e02, \u81fa\u5357\u5e02, \u53f0\u5357\u5e02, \u9ad8\u96c4\u5e02, \u5b9c\u862d\u7e23, \u65b0\u7af9\u7e23, \u82d7\u6817\u7e23, \u5f70\u5316\u7e23, \u5357\u6295\u7e23, \u96f2\u6797\u7e23, \u5609\u7fa9\u7e23, \u5c4f\u6771\u7e23, \u81fa\u6771\u7e23, \u53f0\u6771\u7e23, \u82b1\u84ee\u7e23, \u6f8e\u6e56\u7e23, \u57fa\u9686\u5e02, \u65b0\u7af9\u5e02, \u5609\u7fa9\u5e02, \u91d1\u9580\u7e23, \u9023\u6c5f\u7e23",
+                "operationId": "get_area_list_100_107",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "area"
+                ]
+            }
+        },
+        "/area/100_107/{area}": {
+            "parameters": [
+                {
+                    "description": "\u7e23\u5e02\u540d\u7a31",
+                    "name": "area",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "post": {
+                "responses": {
+                    "404": {
+                        "description": "\u627e\u4e0d\u5230\u8a72\u7e23\u5e02\u7684\u8cc7\u6599"
+                    },
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarAreaModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u67d0\u4e00\u500b\u7e23\u5e02(\u5982\u65b0\u5317\u5e02)\u5167\uff0c\u5404\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (100\u5e74~107\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u63d0\u4f9b\u67e5\u8a62\u7684\u5340\u57df(\u7e23\u5e02)\u6709: \u65b0\u5317\u5e02, \u81fa\u5317\u5e02, \u53f0\u5317\u5e02, \u6843\u5712\u5e02, \u6843\u5712\u7e23, \u81fa\u4e2d\u5e02, \u53f0\u4e2d\u5e02, \u81fa\u5357\u5e02, \u53f0\u5357\u5e02, \u9ad8\u96c4\u5e02, \u5b9c\u862d\u7e23, \u65b0\u7af9\u7e23, \u82d7\u6817\u7e23, \u5f70\u5316\u7e23, \u5357\u6295\u7e23, \u96f2\u6797\u7e23, \u5609\u7fa9\u7e23, \u5c4f\u6771\u7e23, \u81fa\u6771\u7e23, \u53f0\u6771\u7e23, \u82b1\u84ee\u7e23, \u6f8e\u6e56\u7e23, \u57fa\u9686\u5e02, \u65b0\u7af9\u5e02, \u5609\u7fa9\u5e02, \u91d1\u9580\u7e23, \u9023\u6c5f\u7e23",
+                "operationId": "post_area_100_107",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "area"
+                ]
+            }
+        },
+        "/area/102_103/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarAreaListModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u6578\u64da\uff0c\u5728\u5404\u7e23\u5e02\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (102\u5e74~103\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u67e5\u8a62\u7684\u7e23\u5e02\u6709: \u65b0\u5317\u5e02, \u81fa\u5317\u5e02, \u53f0\u5317\u5e02, \u6843\u5712\u5e02, \u6843\u5712\u7e23, \u81fa\u4e2d\u5e02, \u53f0\u4e2d\u5e02, \u81fa\u5357\u5e02, \u53f0\u5357\u5e02, \u9ad8\u96c4\u5e02, \u5b9c\u862d\u7e23, \u65b0\u7af9\u7e23, \u82d7\u6817\u7e23, \u5f70\u5316\u7e23, \u5357\u6295\u7e23, \u96f2\u6797\u7e23, \u5609\u7fa9\u7e23, \u5c4f\u6771\u7e23, \u81fa\u6771\u7e23, \u53f0\u6771\u7e23, \u82b1\u84ee\u7e23, \u6f8e\u6e56\u7e23, \u57fa\u9686\u5e02, \u65b0\u7af9\u5e02, \u5609\u7fa9\u5e02, \u91d1\u9580\u7e23, \u9023\u6c5f\u7e23",
+                "operationId": "get_area_list_102_103",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "area"
+                ]
+            }
+        },
+        "/area/102_103/{area}": {
+            "parameters": [
+                {
+                    "description": "\u7e23\u5e02\u540d\u7a31",
+                    "name": "area",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "post": {
+                "responses": {
+                    "404": {
+                        "description": "\u627e\u4e0d\u5230\u8a72\u7e23\u5e02\u7684\u8cc7\u6599"
+                    },
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarAreaModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u67d0\u4e00\u500b\u7e23\u5e02(\u5982\u65b0\u5317\u5e02)\u5167\uff0c\u5404\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (102\u5e74~103\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u63d0\u4f9b\u67e5\u8a62\u7684\u5340\u57df(\u7e23\u5e02)\u6709: \u65b0\u5317\u5e02, \u81fa\u5317\u5e02, \u53f0\u5317\u5e02, \u6843\u5712\u5e02, \u6843\u5712\u7e23, \u81fa\u4e2d\u5e02, \u53f0\u4e2d\u5e02, \u81fa\u5357\u5e02, \u53f0\u5357\u5e02, \u9ad8\u96c4\u5e02, \u5b9c\u862d\u7e23, \u65b0\u7af9\u7e23, \u82d7\u6817\u7e23, \u5f70\u5316\u7e23, \u5357\u6295\u7e23, \u96f2\u6797\u7e23, \u5609\u7fa9\u7e23, \u5c4f\u6771\u7e23, \u81fa\u6771\u7e23, \u53f0\u6771\u7e23, \u82b1\u84ee\u7e23, \u6f8e\u6e56\u7e23, \u57fa\u9686\u5e02, \u65b0\u7af9\u5e02, \u5609\u7fa9\u5e02, \u91d1\u9580\u7e23, \u9023\u6c5f\u7e23",
+                "operationId": "post_area_102_103",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "area"
+                ]
+            }
+        },
+        "/area/102_107/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarAreaListModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u6578\u64da\uff0c\u5728\u5404\u7e23\u5e02\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (102\u5e74~107\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u67e5\u8a62\u7684\u7e23\u5e02\u6709: \u65b0\u5317\u5e02, \u81fa\u5317\u5e02, \u53f0\u5317\u5e02, \u6843\u5712\u5e02, \u6843\u5712\u7e23, \u81fa\u4e2d\u5e02, \u53f0\u4e2d\u5e02, \u81fa\u5357\u5e02, \u53f0\u5357\u5e02, \u9ad8\u96c4\u5e02, \u5b9c\u862d\u7e23, \u65b0\u7af9\u7e23, \u82d7\u6817\u7e23, \u5f70\u5316\u7e23, \u5357\u6295\u7e23, \u96f2\u6797\u7e23, \u5609\u7fa9\u7e23, \u5c4f\u6771\u7e23, \u81fa\u6771\u7e23, \u53f0\u6771\u7e23, \u82b1\u84ee\u7e23, \u6f8e\u6e56\u7e23, \u57fa\u9686\u5e02, \u65b0\u7af9\u5e02, \u5609\u7fa9\u5e02, \u91d1\u9580\u7e23, \u9023\u6c5f\u7e23",
+                "operationId": "get_area_list_102_107",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "area"
+                ]
+            }
+        },
+        "/area/102_107/{area}": {
+            "parameters": [
+                {
+                    "description": "\u7e23\u5e02\u540d\u7a31",
+                    "name": "area",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "post": {
+                "responses": {
+                    "404": {
+                        "description": "\u627e\u4e0d\u5230\u8a72\u7e23\u5e02\u7684\u8cc7\u6599"
+                    },
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarAreaModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u67d0\u4e00\u500b\u7e23\u5e02(\u5982\u65b0\u5317\u5e02)\u5167\uff0c\u5404\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (102\u5e74~107\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u63d0\u4f9b\u67e5\u8a62\u7684\u5340\u57df(\u7e23\u5e02)\u6709: \u65b0\u5317\u5e02, \u81fa\u5317\u5e02, \u53f0\u5317\u5e02, \u6843\u5712\u5e02, \u6843\u5712\u7e23, \u81fa\u4e2d\u5e02, \u53f0\u4e2d\u5e02, \u81fa\u5357\u5e02, \u53f0\u5357\u5e02, \u9ad8\u96c4\u5e02, \u5b9c\u862d\u7e23, \u65b0\u7af9\u7e23, \u82d7\u6817\u7e23, \u5f70\u5316\u7e23, \u5357\u6295\u7e23, \u96f2\u6797\u7e23, \u5609\u7fa9\u7e23, \u5c4f\u6771\u7e23, \u81fa\u6771\u7e23, \u53f0\u6771\u7e23, \u82b1\u84ee\u7e23, \u6f8e\u6e56\u7e23, \u57fa\u9686\u5e02, \u65b0\u7af9\u5e02, \u5609\u7fa9\u5e02, \u91d1\u9580\u7e23, \u9023\u6c5f\u7e23",
+                "operationId": "post_area_102_107",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "area"
+                ]
+            }
+        },
+        "/area/103_107/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarAreaListModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u6578\u64da\uff0c\u5728\u5404\u7e23\u5e02\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (103\u5e74~107\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u67e5\u8a62\u7684\u7e23\u5e02\u6709: \u65b0\u5317\u5e02, \u81fa\u5317\u5e02, \u53f0\u5317\u5e02, \u6843\u5712\u5e02, \u6843\u5712\u7e23, \u81fa\u4e2d\u5e02, \u53f0\u4e2d\u5e02, \u81fa\u5357\u5e02, \u53f0\u5357\u5e02, \u9ad8\u96c4\u5e02, \u5b9c\u862d\u7e23, \u65b0\u7af9\u7e23, \u82d7\u6817\u7e23, \u5f70\u5316\u7e23, \u5357\u6295\u7e23, \u96f2\u6797\u7e23, \u5609\u7fa9\u7e23, \u5c4f\u6771\u7e23, \u81fa\u6771\u7e23, \u53f0\u6771\u7e23, \u82b1\u84ee\u7e23, \u6f8e\u6e56\u7e23, \u57fa\u9686\u5e02, \u65b0\u7af9\u5e02, \u5609\u7fa9\u5e02, \u91d1\u9580\u7e23, \u9023\u6c5f\u7e23",
+                "operationId": "get_area_list_103_107",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "area"
+                ]
+            }
+        },
+        "/area/103_107/{area}": {
+            "parameters": [
+                {
+                    "description": "\u7e23\u5e02\u540d\u7a31",
+                    "name": "area",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "post": {
+                "responses": {
+                    "404": {
+                        "description": "\u627e\u4e0d\u5230\u8a72\u7e23\u5e02\u7684\u8cc7\u6599"
+                    },
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarAreaModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u67d0\u4e00\u500b\u7e23\u5e02(\u5982\u65b0\u5317\u5e02)\u5167\uff0c\u5404\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (103\u5e74~107\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u63d0\u4f9b\u67e5\u8a62\u7684\u5340\u57df(\u7e23\u5e02)\u6709: \u65b0\u5317\u5e02, \u81fa\u5317\u5e02, \u53f0\u5317\u5e02, \u6843\u5712\u5e02, \u6843\u5712\u7e23, \u81fa\u4e2d\u5e02, \u53f0\u4e2d\u5e02, \u81fa\u5357\u5e02, \u53f0\u5357\u5e02, \u9ad8\u96c4\u5e02, \u5b9c\u862d\u7e23, \u65b0\u7af9\u7e23, \u82d7\u6817\u7e23, \u5f70\u5316\u7e23, \u5357\u6295\u7e23, \u96f2\u6797\u7e23, \u5609\u7fa9\u7e23, \u5c4f\u6771\u7e23, \u81fa\u6771\u7e23, \u53f0\u6771\u7e23, \u82b1\u84ee\u7e23, \u6f8e\u6e56\u7e23, \u57fa\u9686\u5e02, \u65b0\u7af9\u5e02, \u5609\u7fa9\u5e02, \u91d1\u9580\u7e23, \u9023\u6c5f\u7e23",
+                "operationId": "post_area_103_107",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "area"
+                ]
+            }
+        },
+        "/tribe/100_102/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarTribeListModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u5404\u7e23\u5e02(\u5340\u57df)\u5167\uff0c\u6bcf\u500b\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (100\u5e74~102\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u67e5\u8a62\u5230\u7684\u6240\u6709\u539f\u4f4f\u6c11\u65cf\u6709: \u963f\u7f8e\u65cf, \u6cf0\u96c5\u65cf, \u6392\u7063\u65cf, \u5e03\u8fb2\u65cf, \u9b6f\u51f1\u65cf, \u5351\u5357\u65cf, \u9112\u65cf, \u8cfd\u590f\u65cf, \u96c5\u7f8e\u65cf, \u90b5\u65cf, \u5676\u746a\u862d\u65cf, \u592a\u9b6f\u95a3\u65cf, \u6492\u5947\u840a\u96c5\u65cf, \u8cfd\u5fb7\u514b\u65cf, \u62c9\u963f\u9b6f\u54c7\u65cf, \u5361\u90a3\u5361\u90a3\u5bcc\u65cf, \u5c1a\u672a\u7533\u5831",
+                "operationId": "get_tribe_list_100_102",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "tribe"
+                ]
+            }
+        },
+        "/tribe/100_102/{tribe}": {
+            "parameters": [
+                {
+                    "description": "\u539f\u4f4f\u6c11\u65cf\u65cf\u540d",
+                    "name": "tribe",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "post": {
+                "responses": {
+                    "404": {
+                        "description": "\u627e\u4e0d\u5230\u8a72\u539f\u4f4f\u6c11\u65cf\u7684\u8cc7\u6599"
+                    },
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarTribeModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u67d0\u4e00\u500b\u7279\u5b9a\u539f\u4f4f\u6c11\u65cf(\u5982\u963f\u7f8e\u65cf)\uff0c\u5728\u5404\u7e23\u5e02(\u5340\u57df)\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (100\u5e74~102\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u63d0\u4f9b\u67e5\u8a62\u7684\u539f\u4f4f\u6c11\u65cf\u6709: \u963f\u7f8e\u65cf, \u6cf0\u96c5\u65cf, \u6392\u7063\u65cf, \u5e03\u8fb2\u65cf, \u9b6f\u51f1\u65cf, \u5351\u5357\u65cf, \u9112\u65cf, \u8cfd\u590f\u65cf, \u96c5\u7f8e\u65cf, \u90b5\u65cf, \u5676\u746a\u862d\u65cf, \u592a\u9b6f\u95a3\u65cf, \u6492\u5947\u840a\u96c5\u65cf, \u8cfd\u5fb7\u514b\u65cf, \u62c9\u963f\u9b6f\u54c7\u65cf, \u5361\u90a3\u5361\u90a3\u5bcc\u65cf, \u5c1a\u672a\u7533\u5831",
+                "operationId": "post_tribe_100_102",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "tribe"
+                ]
+            }
+        },
+        "/tribe/100_103/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarTribeListModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u5404\u7e23\u5e02(\u5340\u57df)\u5167\uff0c\u6bcf\u500b\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (100\u5e74~103\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u67e5\u8a62\u5230\u7684\u6240\u6709\u539f\u4f4f\u6c11\u65cf\u6709: \u963f\u7f8e\u65cf, \u6cf0\u96c5\u65cf, \u6392\u7063\u65cf, \u5e03\u8fb2\u65cf, \u9b6f\u51f1\u65cf, \u5351\u5357\u65cf, \u9112\u65cf, \u8cfd\u590f\u65cf, \u96c5\u7f8e\u65cf, \u90b5\u65cf, \u5676\u746a\u862d\u65cf, \u592a\u9b6f\u95a3\u65cf, \u6492\u5947\u840a\u96c5\u65cf, \u8cfd\u5fb7\u514b\u65cf, \u62c9\u963f\u9b6f\u54c7\u65cf, \u5361\u90a3\u5361\u90a3\u5bcc\u65cf, \u5c1a\u672a\u7533\u5831",
+                "operationId": "get_tribe_list_100_103",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "tribe"
+                ]
+            }
+        },
+        "/tribe/100_103/{tribe}": {
+            "parameters": [
+                {
+                    "description": "\u539f\u4f4f\u6c11\u65cf\u65cf\u540d",
+                    "name": "tribe",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "post": {
+                "responses": {
+                    "404": {
+                        "description": "\u627e\u4e0d\u5230\u8a72\u539f\u4f4f\u6c11\u65cf\u7684\u8cc7\u6599"
+                    },
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarTribeModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u67d0\u4e00\u500b\u7279\u5b9a\u539f\u4f4f\u6c11\u65cf(\u5982\u963f\u7f8e\u65cf)\uff0c\u5728\u5404\u7e23\u5e02(\u5340\u57df)\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (100\u5e74~103\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u63d0\u4f9b\u67e5\u8a62\u7684\u539f\u4f4f\u6c11\u65cf\u6709: \u963f\u7f8e\u65cf, \u6cf0\u96c5\u65cf, \u6392\u7063\u65cf, \u5e03\u8fb2\u65cf, \u9b6f\u51f1\u65cf, \u5351\u5357\u65cf, \u9112\u65cf, \u8cfd\u590f\u65cf, \u96c5\u7f8e\u65cf, \u90b5\u65cf, \u5676\u746a\u862d\u65cf, \u592a\u9b6f\u95a3\u65cf, \u6492\u5947\u840a\u96c5\u65cf, \u8cfd\u5fb7\u514b\u65cf, \u62c9\u963f\u9b6f\u54c7\u65cf, \u5361\u90a3\u5361\u90a3\u5bcc\u65cf, \u5c1a\u672a\u7533\u5831",
+                "operationId": "post_tribe_100_103",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "tribe"
+                ]
+            }
+        },
+        "/tribe/100_107/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarTribeListModel107"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u5404\u7e23\u5e02(\u5340\u57df)\u5167\uff0c\u6bcf\u500b\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (100\u5e74~107\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u67e5\u8a62\u5230\u7684\u6240\u6709\u539f\u4f4f\u6c11\u65cf\u6709: \u963f\u7f8e\u65cf, \u6cf0\u96c5\u65cf, \u6392\u7063\u65cf, \u5e03\u8fb2\u65cf, \u9b6f\u51f1\u65cf, \u5351\u5357\u65cf, \u9112\u65cf, \u8cfd\u590f\u65cf, \u96c5\u7f8e\u65cf, \u90b5\u65cf, \u5676\u746a\u862d\u65cf, \u592a\u9b6f\u95a3\u65cf, \u6492\u5947\u840a\u96c5\u65cf, \u8cfd\u5fb7\u514b\u65cf, \u62c9\u963f\u9b6f\u54c7\u65cf, \u5361\u90a3\u5361\u90a3\u5bcc\u65cf, \u5c1a\u672a\u7533\u5831",
+                "operationId": "get_tribe_list_100_107",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "tribe"
+                ]
+            }
+        },
+        "/tribe/100_107/{tribe}": {
+            "parameters": [
+                {
+                    "description": "\u539f\u4f4f\u6c11\u65cf\u65cf\u540d",
+                    "name": "tribe",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "post": {
+                "responses": {
+                    "404": {
+                        "description": "\u627e\u4e0d\u5230\u8a72\u539f\u4f4f\u6c11\u65cf\u7684\u8cc7\u6599"
+                    },
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarTribeModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u67d0\u4e00\u500b\u7279\u5b9a\u539f\u4f4f\u6c11\u65cf(\u5982\u963f\u7f8e\u65cf)\uff0c\u5728\u5404\u7e23\u5e02(\u5340\u57df)\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (100\u5e74~107\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u63d0\u4f9b\u67e5\u8a62\u7684\u539f\u4f4f\u6c11\u65cf\u6709: \u963f\u7f8e\u65cf, \u6cf0\u96c5\u65cf, \u6392\u7063\u65cf, \u5e03\u8fb2\u65cf, \u9b6f\u51f1\u65cf, \u5351\u5357\u65cf, \u9112\u65cf, \u8cfd\u590f\u65cf, \u96c5\u7f8e\u65cf, \u90b5\u65cf, \u5676\u746a\u862d\u65cf, \u592a\u9b6f\u95a3\u65cf, \u6492\u5947\u840a\u96c5\u65cf, \u8cfd\u5fb7\u514b\u65cf, \u62c9\u963f\u9b6f\u54c7\u65cf, \u5361\u90a3\u5361\u90a3\u5bcc\u65cf, \u5c1a\u672a\u7533\u5831",
+                "operationId": "post_tribe_100_107",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "tribe"
+                ]
+            }
+        },
+        "/tribe/102_103/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarTribeListModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u5404\u7e23\u5e02(\u5340\u57df)\u5167\uff0c\u6bcf\u500b\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (102\u5e74~103\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u67e5\u8a62\u5230\u7684\u6240\u6709\u539f\u4f4f\u6c11\u65cf\u6709: \u963f\u7f8e\u65cf, \u6cf0\u96c5\u65cf, \u6392\u7063\u65cf, \u5e03\u8fb2\u65cf, \u9b6f\u51f1\u65cf, \u5351\u5357\u65cf, \u9112\u65cf, \u8cfd\u590f\u65cf, \u96c5\u7f8e\u65cf, \u90b5\u65cf, \u5676\u746a\u862d\u65cf, \u592a\u9b6f\u95a3\u65cf, \u6492\u5947\u840a\u96c5\u65cf, \u8cfd\u5fb7\u514b\u65cf, \u62c9\u963f\u9b6f\u54c7\u65cf, \u5361\u90a3\u5361\u90a3\u5bcc\u65cf, \u5c1a\u672a\u7533\u5831",
+                "operationId": "get_tribe_list_102_103",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "tribe"
+                ]
+            }
+        },
+        "/tribe/102_103/{tribe}": {
+            "parameters": [
+                {
+                    "description": "\u539f\u4f4f\u6c11\u65cf\u65cf\u540d",
+                    "name": "tribe",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "post": {
+                "responses": {
+                    "404": {
+                        "description": "\u627e\u4e0d\u5230\u8a72\u539f\u4f4f\u6c11\u65cf\u7684\u8cc7\u6599"
+                    },
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarTribeModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u67d0\u4e00\u500b\u7279\u5b9a\u539f\u4f4f\u6c11\u65cf(\u5982\u963f\u7f8e\u65cf)\uff0c\u5728\u5404\u7e23\u5e02(\u5340\u57df)\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (102\u5e74~103\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u63d0\u4f9b\u67e5\u8a62\u7684\u539f\u4f4f\u6c11\u65cf\u6709: \u963f\u7f8e\u65cf, \u6cf0\u96c5\u65cf, \u6392\u7063\u65cf, \u5e03\u8fb2\u65cf, \u9b6f\u51f1\u65cf, \u5351\u5357\u65cf, \u9112\u65cf, \u8cfd\u590f\u65cf, \u96c5\u7f8e\u65cf, \u90b5\u65cf, \u5676\u746a\u862d\u65cf, \u592a\u9b6f\u95a3\u65cf, \u6492\u5947\u840a\u96c5\u65cf, \u8cfd\u5fb7\u514b\u65cf, \u62c9\u963f\u9b6f\u54c7\u65cf, \u5361\u90a3\u5361\u90a3\u5bcc\u65cf, \u5c1a\u672a\u7533\u5831",
+                "operationId": "post_tribe_102_103",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "tribe"
+                ]
+            }
+        },
+        "/tribe/102_107/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarTribeListModel107"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u5404\u7e23\u5e02(\u5340\u57df)\u5167\uff0c\u6bcf\u500b\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (102\u5e74~107\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u67e5\u8a62\u5230\u7684\u6240\u6709\u539f\u4f4f\u6c11\u65cf\u6709: \u963f\u7f8e\u65cf, \u6cf0\u96c5\u65cf, \u6392\u7063\u65cf, \u5e03\u8fb2\u65cf, \u9b6f\u51f1\u65cf, \u5351\u5357\u65cf, \u9112\u65cf, \u8cfd\u590f\u65cf, \u96c5\u7f8e\u65cf, \u90b5\u65cf, \u5676\u746a\u862d\u65cf, \u592a\u9b6f\u95a3\u65cf, \u6492\u5947\u840a\u96c5\u65cf, \u8cfd\u5fb7\u514b\u65cf, \u62c9\u963f\u9b6f\u54c7\u65cf, \u5361\u90a3\u5361\u90a3\u5bcc\u65cf, \u5c1a\u672a\u7533\u5831",
+                "operationId": "get_tribe_list_102_107",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "tribe"
+                ]
+            }
+        },
+        "/tribe/102_107/{tribe}": {
+            "parameters": [
+                {
+                    "description": "\u539f\u4f4f\u6c11\u65cf\u65cf\u540d",
+                    "name": "tribe",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "post": {
+                "responses": {
+                    "404": {
+                        "description": "\u627e\u4e0d\u5230\u8a72\u539f\u4f4f\u6c11\u65cf\u7684\u8cc7\u6599"
+                    },
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarTribeModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u67d0\u4e00\u500b\u7279\u5b9a\u539f\u4f4f\u6c11\u65cf(\u5982\u963f\u7f8e\u65cf)\uff0c\u5728\u5404\u7e23\u5e02(\u5340\u57df)\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (102\u5e74~107\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u63d0\u4f9b\u67e5\u8a62\u7684\u539f\u4f4f\u6c11\u65cf\u6709: \u963f\u7f8e\u65cf, \u6cf0\u96c5\u65cf, \u6392\u7063\u65cf, \u5e03\u8fb2\u65cf, \u9b6f\u51f1\u65cf, \u5351\u5357\u65cf, \u9112\u65cf, \u8cfd\u590f\u65cf, \u96c5\u7f8e\u65cf, \u90b5\u65cf, \u5676\u746a\u862d\u65cf, \u592a\u9b6f\u95a3\u65cf, \u6492\u5947\u840a\u96c5\u65cf, \u8cfd\u5fb7\u514b\u65cf, \u62c9\u963f\u9b6f\u54c7\u65cf, \u5361\u90a3\u5361\u90a3\u5bcc\u65cf, \u5c1a\u672a\u7533\u5831",
+                "operationId": "post_tribe_102_107",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "tribe"
+                ]
+            }
+        },
+        "/tribe/103_107/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarTribeListModel107"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u5404\u7e23\u5e02(\u5340\u57df)\u5167\uff0c\u6bcf\u500b\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (103\u5e74~107\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u67e5\u8a62\u5230\u7684\u6240\u6709\u539f\u4f4f\u6c11\u65cf\u6709: \u963f\u7f8e\u65cf, \u6cf0\u96c5\u65cf, \u6392\u7063\u65cf, \u5e03\u8fb2\u65cf, \u9b6f\u51f1\u65cf, \u5351\u5357\u65cf, \u9112\u65cf, \u8cfd\u590f\u65cf, \u96c5\u7f8e\u65cf, \u90b5\u65cf, \u5676\u746a\u862d\u65cf, \u592a\u9b6f\u95a3\u65cf, \u6492\u5947\u840a\u96c5\u65cf, \u8cfd\u5fb7\u514b\u65cf, \u62c9\u963f\u9b6f\u54c7\u65cf, \u5361\u90a3\u5361\u90a3\u5bcc\u65cf, \u5c1a\u672a\u7533\u5831",
+                "operationId": "get_tribe_list_103_107",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "tribe"
+                ]
+            }
+        },
+        "/tribe/103_107/{tribe}": {
+            "parameters": [
+                {
+                    "description": "\u539f\u4f4f\u6c11\u65cf\u65cf\u540d",
+                    "name": "tribe",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "post": {
+                "responses": {
+                    "404": {
+                        "description": "\u627e\u4e0d\u5230\u8a72\u539f\u4f4f\u6c11\u65cf\u7684\u8cc7\u6599"
+                    },
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/VarTribeModel"
+                        }
+                    },
+                    "400": {
+                        "description": "Validation Error"
+                    }
+                },
+                "summary": "\u67e5\u8a62\u67d0\u4e00\u500b\u7279\u5b9a\u539f\u4f4f\u6c11\u65cf(\u5982\u963f\u7f8e\u65cf)\uff0c\u5728\u5404\u7e23\u5e02(\u5340\u57df)\u4eba\u53e3\u7684\u5e74\u5ea6\u8b8a\u52d5\u6578\u91cf (103\u5e74~107\u5e74)",
+                "description": "\u76ee\u524d\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u7d71\u8a08\u8cc7\u6599\u96c6\u5167\u5bb9\uff0c\u53ef\u4ee5\u63d0\u4f9b\u67e5\u8a62\u7684\u539f\u4f4f\u6c11\u65cf\u6709: \u963f\u7f8e\u65cf, \u6cf0\u96c5\u65cf, \u6392\u7063\u65cf, \u5e03\u8fb2\u65cf, \u9b6f\u51f1\u65cf, \u5351\u5357\u65cf, \u9112\u65cf, \u8cfd\u590f\u65cf, \u96c5\u7f8e\u65cf, \u90b5\u65cf, \u5676\u746a\u862d\u65cf, \u592a\u9b6f\u95a3\u65cf, \u6492\u5947\u840a\u96c5\u65cf, \u8cfd\u5fb7\u514b\u65cf, \u62c9\u963f\u9b6f\u54c7\u65cf, \u5361\u90a3\u5361\u90a3\u5bcc\u65cf, \u5c1a\u672a\u7533\u5831",
+                "operationId": "post_tribe_103_107",
+                "parameters": [
+                    {
+                        "name": "X-Fields",
+                        "in": "header",
+                        "type": "string",
+                        "format": "mask",
+                        "description": "An optional fields mask"
+                    }
+                ],
+                "tags": [
+                    "tribe"
+                ]
+            }
+        }
+    },
+    "info": {
+        "title": "\u81fa\u7063\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u5206\u4f48\u6578\u91cf\u8b8a\u5316\u8cc7\u6599\u96c6 API",
+        "version": "1.0",
+        "description": "\u539f\u4f4f\u6c11\u65cf\u59d4\u54e1\u6703 \u81fa\u7063\u539f\u6c11\u4eba\u53e3\u7d71\u8a08\u8b8a\u52d5\u6578\u64da\u8cc7\u6599\u96c6 API"
+    },
+    "produces": [
+        "application/json"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "tags": [
+        {
+            "name": "tribe",
+            "description": "\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u8b8a\u5316(100\u5e74-107\u5e74): \u65cf"
+        },
+        {
+            "name": "area",
+            "description": "\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u8b8a\u5316(100\u5e74-107\u5e74): \u7e23\u5e02"
+        },
+        {
+            "name": "tribe",
+            "description": "\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u8b8a\u5316(100-107): \u65cf"
+        },
+        {
+            "name": "area",
+            "description": "\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u8b8a\u5316(100-107): \u7e23\u5e02"
+        },
+        {
+            "name": "tribe",
+            "description": "\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u8b8a\u5316(100-107): \u65cf"
+        },
+        {
+            "name": "area",
+            "description": "\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u8b8a\u5316(100-107): \u7e23\u5e02"
+        },
+        {
+            "name": "tribe",
+            "description": "\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u8b8a\u5316(100-107): \u65cf"
+        },
+        {
+            "name": "area",
+            "description": "\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u8b8a\u5316(100-107): \u7e23\u5e02"
+        },
+        {
+            "name": "tribe",
+            "description": "\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u8b8a\u5316(100-107): \u65cf"
+        },
+        {
+            "name": "area",
+            "description": "\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u8b8a\u5316(100-107): \u7e23\u5e02"
+        },
+        {
+            "name": "tribe",
+            "description": "\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u8b8a\u5316(100-107): \u65cf"
+        },
+        {
+            "name": "area",
+            "description": "\u539f\u4f4f\u6c11\u65cf\u4eba\u53e3\u8b8a\u5316(100-107): \u7e23\u5e02"
+        }
+    ],
+    "definitions": {
+        "VarTribeListModel": {
+            "required": [
+                "\u5357\u6295\u7e23",
+                "\u5609\u7fa9\u5e02",
+                "\u5609\u7fa9\u7e23",
+                "\u57fa\u9686\u5e02",
+                "\u5b9c\u862d\u7e23",
+                "\u5c4f\u6771\u7e23",
+                "\u5f70\u5316\u7e23",
+                "\u65b0\u5317\u5e02",
+                "\u65b0\u7af9\u5e02",
+                "\u65b0\u7af9\u7e23",
+                "\u65cf\u5225",
+                "\u6843\u5712\u7e23",
+                "\u6f8e\u6e56\u7e23",
+                "\u81fa\u4e2d\u5e02",
+                "\u81fa\u5317\u5e02",
+                "\u81fa\u5357\u5e02",
+                "\u81fa\u6771\u7e23",
+                "\u82b1\u84ee\u7e23",
+                "\u82d7\u6817\u7e23",
+                "\u9023\u6c5f\u7e23",
+                "\u91d1\u9580\u7e23",
+                "\u96f2\u6797\u7e23",
+                "\u9ad8\u96c4\u5e02"
+            ],
+            "properties": {
+                "\u65cf\u5225": {
+                    "type": "string",
+                    "description": "\u539f\u4f4f\u6c11\u65cf",
+                    "example": "\u5e03\u8fb2\u65cf"
+                },
+                "\u65b0\u5317\u5e02": {
+                    "type": "integer",
+                    "description": "\u65b0\u5317\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u81fa\u5317\u5e02": {
+                    "type": "integer",
+                    "description": "\u81fa\u5317\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u6843\u5712\u7e23": {
+                    "type": "integer",
+                    "description": "\u6843\u5712\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u81fa\u4e2d\u5e02": {
+                    "type": "integer",
+                    "description": "\u81fa\u4e2d\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u81fa\u5357\u5e02": {
+                    "type": "integer",
+                    "description": "\u81fa\u5357\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u9ad8\u96c4\u5e02": {
+                    "type": "integer",
+                    "description": "\u9ad8\u96c4\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5b9c\u862d\u7e23": {
+                    "type": "integer",
+                    "description": "\u5b9c\u862d\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u65b0\u7af9\u7e23": {
+                    "type": "integer",
+                    "description": "\u65b0\u7af9\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u82d7\u6817\u7e23": {
+                    "type": "integer",
+                    "description": "\u82d7\u6817\u7e23\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5f70\u5316\u7e23": {
+                    "type": "integer",
+                    "description": "\u5f70\u5316\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5357\u6295\u7e23": {
+                    "type": "integer",
+                    "description": "\u5357\u6295\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u96f2\u6797\u7e23": {
+                    "type": "integer",
+                    "description": "\u96f2\u6797\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5609\u7fa9\u7e23": {
+                    "type": "integer",
+                    "description": "\u5609\u7fa9\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5c4f\u6771\u7e23": {
+                    "type": "integer",
+                    "description": "\u5c4f\u6771\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u81fa\u6771\u7e23": {
+                    "type": "integer",
+                    "description": "\u81fa\u6771\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u82b1\u84ee\u7e23": {
+                    "type": "integer",
+                    "description": "\u82b1\u84ee\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u6f8e\u6e56\u7e23": {
+                    "type": "integer",
+                    "description": "\u6f8e\u6e56\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u57fa\u9686\u5e02": {
+                    "type": "integer",
+                    "description": "\u57fa\u9686\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u65b0\u7af9\u5e02": {
+                    "type": "integer",
+                    "description": "\u65b0\u7af9\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5609\u7fa9\u5e02": {
+                    "type": "integer",
+                    "description": "\u5609\u7fa9\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u91d1\u9580\u7e23": {
+                    "type": "integer",
+                    "description": "\u91d1\u9580\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u9023\u6c5f\u7e23": {
+                    "type": "integer",
+                    "description": "\u9023\u6c5f\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                }
+            },
+            "type": "object"
+        },
+        "VarTribeModel": {
+            "required": [
+                "amount",
+                "area"
+            ],
+            "properties": {
+                "area": {
+                    "type": "string",
+                    "description": "\u7e23\u5e02",
+                    "example": "\u81fa\u6771\u7e23"
+                },
+                "amount": {
+                    "type": "integer",
+                    "description": "\u4eba\u53e3\u8b8a\u5316\u6578"
+                }
+            },
+            "type": "object"
+        },
+        "VarAreaListModel": {
+            "required": [
+                "\u5340\u57df\u5225",
+                "\u5351\u5357\u65cf",
+                "\u5361\u90a3\u5361\u90a3\u5bcc\u65cf",
+                "\u5676\u746a\u862d\u65cf",
+                "\u592a\u9b6f\u95a3\u65cf",
+                "\u5c1a\u672a\u7533\u5831",
+                "\u5e03\u8fb2\u65cf",
+                "\u62c9\u963f\u9b6f\u54c7\u65cf",
+                "\u6392\u7063\u65cf",
+                "\u6492\u5947\u840a\u96c5\u65cf",
+                "\u6cf0\u96c5\u65cf",
+                "\u7e3d\u8a08",
+                "\u8cfd\u590f\u65cf",
+                "\u8cfd\u5fb7\u514b\u65cf",
+                "\u90b5\u65cf",
+                "\u9112\u65cf",
+                "\u963f\u7f8e\u65cf",
+                "\u96c5\u7f8e\u65cf",
+                "\u9b6f\u51f1\u65cf"
+            ],
+            "properties": {
+                "\u5340\u57df\u5225": {
+                    "type": "string",
+                    "description": "\u7e23\u5e02",
+                    "example": "\u81fa\u6771\u7e23"
+                },
+                "\u7e3d\u8a08": {
+                    "type": "integer",
+                    "description": "\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u963f\u7f8e\u65cf": {
+                    "type": "integer",
+                    "description": "\u963f\u7f8e\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u6cf0\u96c5\u65cf": {
+                    "type": "integer",
+                    "description": "\u6cf0\u96c5\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u6392\u7063\u65cf": {
+                    "type": "integer",
+                    "description": "\u6392\u7063\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5e03\u8fb2\u65cf": {
+                    "type": "integer",
+                    "description": "\u5e03\u8fb2\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u9b6f\u51f1\u65cf": {
+                    "type": "integer",
+                    "description": "\u9b6f\u51f1\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5351\u5357\u65cf": {
+                    "type": "integer",
+                    "description": "\u5351\u5357\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u9112\u65cf": {
+                    "type": "integer",
+                    "description": "\u9112\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u8cfd\u590f\u65cf": {
+                    "type": "integer",
+                    "description": "\u8cfd\u590f\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u96c5\u7f8e\u65cf": {
+                    "type": "integer",
+                    "description": "\u96c5\u7f8e\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u90b5\u65cf": {
+                    "type": "integer",
+                    "description": "\u90b5\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5676\u746a\u862d\u65cf": {
+                    "type": "integer",
+                    "description": "\u5676\u746a\u862d\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u592a\u9b6f\u95a3\u65cf": {
+                    "type": "integer",
+                    "description": "\u592a\u9b6f\u95a3\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u6492\u5947\u840a\u96c5\u65cf": {
+                    "type": "integer",
+                    "description": "\u6492\u5947\u840a\u96c5\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u8cfd\u5fb7\u514b\u65cf": {
+                    "type": "integer",
+                    "description": "\u8cfd\u5fb7\u514b\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u62c9\u963f\u9b6f\u54c7\u65cf": {
+                    "type": "integer",
+                    "description": "\u62c9\u963f\u9b6f\u54c7\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5361\u90a3\u5361\u90a3\u5bcc\u65cf": {
+                    "type": "integer",
+                    "description": "\u5361\u90a3\u5361\u90a3\u5bcc\u65cf\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5c1a\u672a\u7533\u5831": {
+                    "type": "integer",
+                    "description": "\u5c1a\u672a\u7533\u5831\u4eba\u53e3\u8b8a\u5316\u6578"
+                }
+            },
+            "type": "object"
+        },
+        "VarAreaModel": {
+            "required": [
+                "amount",
+                "tribe"
+            ],
+            "properties": {
+                "tribe": {
+                    "type": "string",
+                    "description": "\u539f\u4f4f\u6c11\u65cf",
+                    "example": "\u5e03\u8fb2\u65cf"
+                },
+                "amount": {
+                    "type": "integer",
+                    "description": "\u4eba\u53e3\u8b8a\u5316\u6578"
+                }
+            },
+            "type": "object"
+        },
+        "VarTribeListModel107": {
+            "required": [
+                "\u5357\u6295\u7e23",
+                "\u5609\u7fa9\u5e02",
+                "\u5609\u7fa9\u7e23",
+                "\u57fa\u9686\u5e02",
+                "\u5b9c\u862d\u7e23",
+                "\u5c4f\u6771\u7e23",
+                "\u5f70\u5316\u7e23",
+                "\u65b0\u5317\u5e02",
+                "\u65b0\u7af9\u5e02",
+                "\u65b0\u7af9\u7e23",
+                "\u65cf\u5225",
+                "\u6843\u5712\u5e02",
+                "\u6f8e\u6e56\u7e23",
+                "\u81fa\u4e2d\u5e02",
+                "\u81fa\u5317\u5e02",
+                "\u81fa\u5357\u5e02",
+                "\u81fa\u6771\u7e23",
+                "\u82b1\u84ee\u7e23",
+                "\u82d7\u6817\u7e23",
+                "\u9023\u6c5f\u7e23",
+                "\u91d1\u9580\u7e23",
+                "\u96f2\u6797\u7e23",
+                "\u9ad8\u96c4\u5e02"
+            ],
+            "properties": {
+                "\u65cf\u5225": {
+                    "type": "string",
+                    "description": "\u539f\u4f4f\u6c11\u65cf",
+                    "example": "\u5e03\u8fb2\u65cf"
+                },
+                "\u65b0\u5317\u5e02": {
+                    "type": "integer",
+                    "description": "\u65b0\u5317\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u81fa\u5317\u5e02": {
+                    "type": "integer",
+                    "description": "\u81fa\u5317\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u6843\u5712\u5e02": {
+                    "type": "integer",
+                    "description": "\u6843\u5712\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u81fa\u4e2d\u5e02": {
+                    "type": "integer",
+                    "description": "\u81fa\u4e2d\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u81fa\u5357\u5e02": {
+                    "type": "integer",
+                    "description": "\u81fa\u5357\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u9ad8\u96c4\u5e02": {
+                    "type": "integer",
+                    "description": "\u9ad8\u96c4\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5b9c\u862d\u7e23": {
+                    "type": "integer",
+                    "description": "\u5b9c\u862d\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u65b0\u7af9\u7e23": {
+                    "type": "integer",
+                    "description": "\u65b0\u7af9\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u82d7\u6817\u7e23": {
+                    "type": "integer",
+                    "description": "\u82d7\u6817\u7e23\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5f70\u5316\u7e23": {
+                    "type": "integer",
+                    "description": "\u5f70\u5316\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5357\u6295\u7e23": {
+                    "type": "integer",
+                    "description": "\u5357\u6295\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u96f2\u6797\u7e23": {
+                    "type": "integer",
+                    "description": "\u96f2\u6797\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5609\u7fa9\u7e23": {
+                    "type": "integer",
+                    "description": "\u5609\u7fa9\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5c4f\u6771\u7e23": {
+                    "type": "integer",
+                    "description": "\u5c4f\u6771\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u81fa\u6771\u7e23": {
+                    "type": "integer",
+                    "description": "\u81fa\u6771\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u82b1\u84ee\u7e23": {
+                    "type": "integer",
+                    "description": "\u82b1\u84ee\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u6f8e\u6e56\u7e23": {
+                    "type": "integer",
+                    "description": "\u6f8e\u6e56\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u57fa\u9686\u5e02": {
+                    "type": "integer",
+                    "description": "\u57fa\u9686\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u65b0\u7af9\u5e02": {
+                    "type": "integer",
+                    "description": "\u65b0\u7af9\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u5609\u7fa9\u5e02": {
+                    "type": "integer",
+                    "description": "\u5609\u7fa9\u5e02\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u91d1\u9580\u7e23": {
+                    "type": "integer",
+                    "description": "\u91d1\u9580\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                },
+                "\u9023\u6c5f\u7e23": {
+                    "type": "integer",
+                    "description": "\u9023\u6c5f\u7e23\u4eba\u53e3\u8b8a\u5316\u6578"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "responses": {
+        "ParseError": {
+            "description": "When a mask can't be parsed"
+        },
+        "MaskError": {
+            "description": "When any error occurs on mask"
+        }
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+    		<div id="Tianzhong_Marathon">
+    			<h2>跑者人流分析與預測(田中馬2017~2019年模型)</h2>
+    			<h2>以目前(鳴槍後)時間(秒)，通過該感應點(距離)之跑者可能人數(跑者群之高峰期人數_該群50%(眾數)數量</h2>
+    		</div>
+    	</div>
+	</header>
+
+	<div class="ml-container">
+        <form method='post' action={{ url_for('predict') }}>
+            <p>
+                <label for="runner">1. 此次全馬參賽(或報名)人數 (人)</label>
+                <input type="text" id="runner" name="runner" value="3000"><br> 
+            </p>
+            <p>
+                <label for="commence_time">2. 鳴槍時間_24小時制 (hh:mm:ss)</label>
+                <input type="text" id="commence_time" name="commence_time" value="06:00:00"><br> 
+            </p>  
+            <p>
+                <label for="observed_time">3. 現在觀察時間_24小時制 (hh:mm:ss)</label>
+                <input type="text" id="observed_time" name="observed_time" value="07:00:00"><br> 
+            </p>    
+            <p>
+                <label for="distance">4. 距離 (公尺)(感應點位置)</label>
+                <input type="text" id="distance" name="distance" value="10000"><br>
+            </p>
+            <p>
+                <label for="temp">5. 溫度</label>
+                <input type="text" id="temp" name="temp" value="25"><br>           
+            </p>
+            <p>
+                <label for="hum">6. 濕度</label>
+                <input type="text" id="hum" name="hum" value="70"><br>  
+            </p>
+            <p>
+                <label for="heatindex">7. 熱中暑危險係數</label>
+                <input type="text" id="heatindex" name="heatindex" value="30"><br>                     
+            </p>
+            <p>
+                <label for="AQI">8. 空氣品質指標(AQI)</label>
+                <input type="text" id="AQI" name="AQI" value="50"><br>  
+            </p>
+            <p>
+                <label for="PM">9. 細懸浮微粒(PM2.5)</label>
+                <input type="text" id="PM" name="PM" value="20"><br> 
+            </p>
+            <p>
+                <label for="WR">10. 蒲福風級(幾級風)</label>
+                <input type="text" id="WR" name="WR" value="1"><br> 
+            </p>
+            <p>
+                <label for="rain">11. 小時雨量 mm (每小時幾豪米)</label>
+                <input type="text" id="rain" name="rain" value="1"><br> 
+            </p>
+            <p>
+                <button type='submit' class="btn-info" value="predict">Submit</button>
+            </p>    
+        </form>
+	</div>
+</body>
+
+</html>
+
