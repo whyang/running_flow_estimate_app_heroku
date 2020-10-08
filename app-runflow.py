@@ -189,7 +189,7 @@ def predict():
     
 if __name__ == '__main__':
     # initiate web framework in terms of the flask
-    #pp.run(debug=False, host='https://app-runflow.herokuapp.com') # for deploying on Heroku 
+    #pp.run(debug=False, host='https://running-flow-estimate.herokuapp.com') # for deploying on Heroku 
     app.run(debug=True, host='0.0.0.0', port=5000)
     #app.run(debug=False, host='0.0.0.0', port=5000) 
 ###
